@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Distribución de Mesas</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #a8dadc, #457b9d);
+            color: #1d3557;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .titulo-evento {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: #f1faee;
+            text-shadow: 2px 2px 4px #1d3557;
+        }
+
+        .mesa-titulo {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #e63946;
+        }
+
+        .invitados-list li {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #1d3557;
+        }
+
+        .invitados-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .card {
+            background: #f1faee;
+            border: 2px solid #a8dadc;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .form-control-lg {
+            border-radius: 30px;
+            font-size: 1.25rem;
+            padding: 1rem 1.5rem;
+            border: 2px solid #a8dadc;
+        }
+
+        header p.lead {
+            font-size: 1.25rem;
+            color: #e0e0e0;
+            text-shadow: 1px 1px 3px #1d3557;
+        }
+
+        .highlight {
+            background-color: #ffd166;
+            font-weight: bold;
+            color: #1d3557;
+            border-radius: 4px;
+            padding: 0 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Título y buscador -->
+    <header class="container py-5 text-center">
+        <h1 class="display-4 titulo-evento">Bienvenidos al cumpleaños de Jose Angel</h1>
+        <p class="lead">Verifica tu mesa ingresando tu nombre</p>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 mt-4">
+                <input
+                    type="text"
+                    id="searchInput"
+                    class="form-control form-control-lg"
+                    placeholder="Por favor busca tu nombre aquí..."
+                />
+            </div>
+        </div>
+    </header>
+
+    <!-- Mesas -->
+    <main class="container py-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="mesasContainer">
+            <!-- MESA 1 -->
+            <div
+                class="col mesa-card"
+                data-guests="ana pérez carlos lópez laura garcía juan martínez sofía rodríguez miguel álvarez diana morales andrés soto paula ramírez jorge gómez"
+            >
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mesa-titulo">Mesa 1</h5>
+                        <ul class="list-unstyled invitados-list">
+                            <li>Ana Pérez</li>
+                            <li>Carlos López</li>
+                            <li>Laura García</li>
+                            <li>Juan Martínez</li>
+                            <li>Sofía Rodríguez</li>
+                            <li>Miguel Álvarez</li>
+                            <li>Diana Morales</li>
+                            <li>Andrés Soto</li>
+                            <li>Paula Ramírez</li>
+                            <li>Jorge Gómez</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MESA 2 -->
+            <div
+                class="col mesa-card"
+                data-guests="camila herrera josé suárez natalia restrepo david torres manuela arango esteban rojas verónica salazar simón valencia liliana osorio fabián quintero"
+            >
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mesa-titulo">Mesa 2</h5>
+                        <ul class="list-unstyled invitados-list">
+                            <li>Camila Herrera</li>
+                            <li>José Suárez</li>
+                            <li>Natalia Restrepo</li>
+                            <li>David Torres</li>
+                            <li>Manuela Arango</li>
+                            <li>Esteban Rojas</li>
+                            <li>Verónica Salazar</li>
+                            <li>Simón Valencia</li>
+                            <li>Liliana Osorio</li>
+                            <li>Fabián Quintero</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MESA 3 -->
+            <div
+                class="col mesa-card"
+                data-guests="maría castaño luis bonilla juliana acevedo sergio jaramillo andrea londoño tomás cardona lucía muñoz daniel ospina alejandra gil fernando lópez"
+            >
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mesa-titulo">Mesa 3</h5>
+                        <ul class="list-unstyled invitados-list">
+                            <li>María Castaño</li>
+                            <li>Luis Bonilla</li>
+                            <li>Juliana Acevedo</li>
+                            <li>Sergio Jaramillo</li>
+                            <li>Andrea Londoño</li>
+                            <li>Tomás Cardona</li>
+                            <li>Lucía Muñoz</li>
+                            <li>Daniel Ospina</li>
+                            <li>Alejandra Gil</li>
+                            <li>Fernando López</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MESA 4 -->
+            <div
+                class="col mesa-card"
+                data-guests="valentina moreno felipe hernández isabela correa juan esteban mariana restrepo carolina duque santiago gómez melissa zapata sebastián montoya andrea villa"
+            >
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mesa-titulo">Mesa 4</h5>
+                        <ul class="list-unstyled invitados-list">
+                            <li>Valentina Moreno</li>
+                            <li>Felipe Hernández</li>
+                            <li>Isabela Correa</li>
+                            <li>Juan Esteban</li>
+                            <li>Mariana Restrepo</li>
+                            <li>Carolina Duque</li>
+                            <li>Santiago Gómez</li>
+                            <li>Melissa Zapata</li>
+                            <li>Sebastián Montoya</li>
+                            <li>Andrea Villa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MESA 5 -->
+            <div
+                class="col mesa-card"
+                data-guests="nicolás ibarra maría fernanda morales tomás zapata alejandra salinas emilio hernández sara pineda camilo yepes lucía cardona daniela toro marcos agudelo"
+            >
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mesa-titulo">Mesa 5</h5>
+                        <ul class="list-unstyled invitados-list">
+                            <li>Nicolás Ibarra</li>
+                            <li>María Fernanda Morales</li>
+                            <li>Tomás Zapata</li>
+                            <li>Alejandra Salinas</li>
+                            <li>Emilio Hernández</li>
+                            <li>Sara Pineda</li>
+                            <li>Camilo Yepes</li>
+                            <li>Lucía Cardona</li>
+                            <li>Daniela Toro</li>
+                            <li>Marcos Agudelo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script para búsqueda y filtrado -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const input = document.getElementById("searchInput");
+            const mesas = document.querySelectorAll(".mesa-card");
+
+            input.addEventListener("input", function () {
+                const search = input.value.trim().toLowerCase();
+
+                mesas.forEach((mesa) => {
+                    const guests = mesa.getAttribute("data-guests").toLowerCase();
+
+                    if (!search) {
+                        mesa.style.display = "block";
+                        removeHighlights(mesa);
+                    } else if (guests.includes(search)) {
+                        mesa.style.display = "block";
+                        highlightName(mesa, search);
+                    } else {
+                        mesa.style.display = "none";
+                        removeHighlights(mesa);
+                    }
+                });
+            });
+
+            function highlightName(mesa, name) {
+                const lis = mesa.querySelectorAll("li");
+                lis.forEach((li) => {
+                    if (li.textContent.toLowerCase().includes(name)) {
+                        li.classList.add("highlight");
+                    } else {
+                        li.classList.remove("highlight");
+                    }
+                });
+            }
+
+            function removeHighlights(mesa) {
+                const lis = mesa.querySelectorAll("li");
+                lis.forEach((li) => li.classList.remove("highlight"));
+            }
+        });
+    </script>
+</body>
+</html>

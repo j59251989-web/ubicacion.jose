@@ -1,0 +1,118 @@
+¿/* ===== GENERAL ===== */
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(to bottom right, #eaf4ff, #d4e4f7); /* fondo con degradado */
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-evento {
+    font-weight: 800;
+    font-size: 3.2rem;
+    color: #1f3b73;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #a3bfe6;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+header p.lead {
+    font-size: 1.2rem;
+    color: #3b3b3b;
+}
+
+/* ===== INPUT DE BÚSQUEDA ===== */
+.form-control-lg {
+    border-radius: 12px;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid #a3bfe6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.form-control-lg:focus {
+    border-color: #5c9ee7;
+    box-shadow: 0 0 10px rgba(92, 158, 231, 0.4);
+}
+
+/* ===== TARJETAS ===== */
+.card {
+    background: #ffffff;
+    border: 2px solid #c2d8f4;
+    border-radius: 20px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    background: linear-gradient(to right, #7fb3ff, #a0cfff);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* ===== TÍTULO DE MESA ===== */
+.mesa-titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1f3b73;
+    text-transform: uppercase;
+}
+
+/* ===== INVITADOS ===== */
+.invitados-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.invitados-list li {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #2a2a2a;
+    margin-bottom: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.invitados-list li:hover {
+    background-color: #edf5ff;
+    cursor: default;
+}
+
+/* ===== NOMBRE DESTACADO AL BUSCAR ===== */
+.highlight {
+    background-color: #b6f2ce;
+    font-weight: bold;
+    color: #000;
+    border-radius: 4px;
+}
+
+/* ===== FOOTER (si lo usas) ===== */
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #777;
+    text-align: center;
+}
+
